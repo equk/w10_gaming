@@ -7,3 +7,12 @@ Simple scripts to run after a new install of Windows 10
 These scripts are based on my [Windows 10 Tweaks](https://github.com/equk/windows) but are modified to allow users to run Apps & Games from the Windows Store & the Xbox Gaming App.
 
 Created for Windows 10 21H2
+
+## :page_facing_up: Scripts
+
+- disable-telemetry
+- disable-tasks
+- disable-services
+- misc-tweaks
+
+:warning: *scripts must be run as administrator*
