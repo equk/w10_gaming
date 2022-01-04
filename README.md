@@ -8,6 +8,33 @@ These scripts are based on my [Windows 10 Tweaks](https://github.com/equk/window
 
 Created for Windows 10 21H2
 
+## :white_check_mark: Features
+
+- [x] Disable Telemetry
+- [x] Disable Problem Steps Recorder
+- [x] Disable Application Impact Telemetry
+- [x] Disable Customer Experience Improvement Program
+- [x] Disable Unwanted Scheduled Tasks
+- [x] Disable Unwanted Services
+- [x] Disable Windows Store Restrictions
+
+## ⚙️ Tweaks
+
+- [x] Use Old Style Volume Mixer
+- [x] Set Windows Explorer Default view to This PC
+- [x] Disable Hiding of Known File Extensions
+- [x] Disable Tablet Lockscreen
+- [x] Disable Background On Logon Screen
+- [x] Set Windows Time to UTC
+- [x] Disable Windows 10 Xbox Overlay
+- [x] Disable Windows Consumer Features
+- [x] Disable Cortana Searchbar in System Tray
+- [x] Disable Automatic Sample Submission in Windows Defender
+- [x] Allow Install of Apps Outside of Windows Store
+- [x] Disable Windows SmartScreen in Windows Shell
+- [x] Disable Microsoft Remote Assistance
+- [x] Disable Meet Now in Taskbar
+
 ## :page_facing_up: Scripts
 
 - disable-telemetry
