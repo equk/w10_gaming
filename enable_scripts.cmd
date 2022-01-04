@@ -1,5 +1,5 @@
 @echo off
-echo allowing users to run powershell scripts
+echo allowing administrator access to run powershell scripts
 echo.
 echo for more information see: about_Execution_Policies
 echo.

@@ -43,3 +43,9 @@ Created for Windows 10 21H2
 - misc-tweaks
 
 :warning: *scripts must be run as administrator*
+
+# Contact
+
+Website: https://equk.co.uk
+
+Twitter: [@equilibriumuk](https://twitter.com/equilibriumuk)
