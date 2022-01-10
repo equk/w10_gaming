@@ -65,3 +65,6 @@ foreach ($optional in $optionals) {
     Write-Host "      + Removing App $optional ..."
     Get-WindowsCapability -Online -LimitAccess | Where-Object { $_.Name -like $optional } | Remove-WindowsCapability -Online -ErrorAction SilentlyContinue
 }
+
+Write-Host ">> Windows 10 Cleanup Script Finished"
+Write-Host "+++ Please Restart Windows +++"
