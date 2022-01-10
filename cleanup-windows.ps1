@@ -20,7 +20,7 @@
     https://github.com/equk
 #>
 
-$packages = @{
+$packages = @(
     "Microsoft.BingWeather"
     "Microsoft.Office.OneNote"
     "Microsoft.MicrosoftOfficeHub"
@@ -30,7 +30,7 @@ $packages = @{
     "Microsoft.WindowsMaps"
     "Microsoft.ZuneMusic"
     "Microsoft.ZuneVideo"
-}
+)
 
 $features = @(
     "SMB1Protocol"
@@ -45,3 +45,23 @@ $optionals = @(
     "OneCoreUAP.OneSync"
     "Print.Fax.Scan"
 )
+
+Write-Host ">> Starting Windows 10 Cleanup Script"
+
+Write-Host "    ++ Disabling Windows Features"
+foreach ($feature in $features) {
+    Write-Host "      + Disabling Optional Feature $feature ..."
+    Disable-WindowsOptionalFeature -Online -FeatureName $feature -NoRestart -ErrorAction SilentlyContinue
+}
+
+Write-Host "    ++ Removing Windows App Packages"
+foreach ($package in $packages) {
+    Write-Host "      + Removing App $package ..."
+    Get-AppxPackage -Name $package | Remove-AppxPackage -ErrorAction SilentlyContinue
+}
+
+Write-Host "    ++ Removing Windows Optional Apps"
+foreach ($optional in $optionals) {
+    Write-Host "      + Removing App $optional ..."
+    Get-WindowsCapability -Online -LimitAccess | Where-Object { $_.Name -like $optional } | Remove-WindowsCapability -Online -ErrorAction SilentlyContinue
+}
