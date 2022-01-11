@@ -53,7 +53,18 @@ Created for **Windows 10 21H2**
 - misc-tweaks
 - cleanup-windows
 
+## :bulb: Example Run Order
+
+:loudspeaker: install windows with no network connected
+
 :warning: *scripts must be run as administrator*
+
+- [ ] ⚙️ enable_scripts.cmd
+- [ ] ⚙️ disable-tasks.ps1
+- [ ] ⚙️ disable-services.ps1
+- [ ] ⚙️ disable-telemetry.ps1
+- [ ] ⚙️ misc-tweaks.ps1
+- [ ] ⚙️ windows-cleanup.ps1
 
 # Contact
 
