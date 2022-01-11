@@ -26,7 +26,6 @@ Created for **Windows 10 21H2**
 - [x] Disable Tablet Lockscreen
 - [x] Disable Background On Logon Screen
 - [x] Set Windows Time to UTC
-- [x] Disable Windows 10 Xbox Overlay
 - [x] Disable Windows Consumer Features
 - [x] Disable Cortana Searchbar in System Tray
 - [x] Disable Automatic Sample Submission in Windows Defender
