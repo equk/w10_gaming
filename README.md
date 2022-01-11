@@ -35,12 +35,23 @@ Created for **Windows 10 21H2**
 - [x] Disable Microsoft Remote Assistance
 - [x] Disable Meet Now in Taskbar
 
+## 🧹 Cleanup
+
+- [x] Removes SMB1 Protocol
+- [x] Removes Windows Media Player
+- [x] Removes Microsoft Office Apps
+- [x] Removes Microsoft Skype
+- [x] Removes Sponsored Apps (eg: spotify, facebook, disney+)
+- [x] Removes StepsRecorder
+- [x] Removes Hello Face (biometrics)
+
 ## :page_facing_up: Scripts
 
 - disable-telemetry
 - disable-tasks
 - disable-services
 - misc-tweaks
+- cleanup-windows
 
 :warning: *scripts must be run as administrator*
 
