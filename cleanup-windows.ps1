@@ -34,6 +34,22 @@ $packages = @(
     "Microsoft.ZuneVideo"
 )
 
+$sponsors = @(
+    "BubbleWitch3Saga"
+    "CandyCrush"
+    "Dolby"
+    "Duolingo-LearnLanguagesforFree"
+    "EclipseManager"
+    "Facebook"
+    "Flipboard"
+    "PandoraMediaInc"
+    "Royal Revolt"
+    "Spotify"
+    "Sway"
+    "Twitter"
+    "Wunderlist"
+)
+
 $features = @(
     "SMB1Protocol"
     "WindowsMediaPlayer"
