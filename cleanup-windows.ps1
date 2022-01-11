@@ -78,6 +78,12 @@ foreach ($package in $packages) {
     Get-AppxPackage -Name $package | Remove-AppxPackage -ErrorAction SilentlyContinue
 }
 
+Write-Host "    ++ Removing Windows Sponsored App Packages"
+foreach ($sponsor in $sponsors) {
+    Write-Host "      + Removing Sponsored App $sponsor ..."
+    Get-AppxPackage | Where-Object Name -cmatch $sponsor | Remove-AppxPackage -ErrorAction SilentlyContinue
+}
+
 Write-Host "    ++ Removing Windows Optional Apps"
 foreach ($optional in $optionals) {
     Write-Host "      + Removing App $optional ..."
