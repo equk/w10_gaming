@@ -8,6 +8,8 @@
     Script to Cleanup Windows 10
     Requires Admin Access
 
+    Removes Unwanted Features, Apps & Sponsored Apps
+
     Twitter: @equilibriumuk
 
     Created for Windows 10 21H2
@@ -51,7 +53,7 @@ Write-Host ">> Starting Windows 10 Cleanup Script"
 Write-Host "    ++ Disabling Windows Features"
 foreach ($feature in $features) {
     Write-Host "      + Disabling Optional Feature $feature ..."
-    Disable-WindowsOptionalFeature -Online -FeatureName $feature -NoRestart -ErrorAction SilentlyContinue
+    Disable-WindowsOptionalFeature -Online -FeatureName $feature -NoRestart -ErrorAction SilentlyContinue | Out-Null
 }
 
 Write-Host "    ++ Removing Windows App Packages"
@@ -67,4 +69,4 @@ foreach ($optional in $optionals) {
 }
 
 Write-Host ">> Windows 10 Cleanup Script Finished"
-Write-Host "+++ Please Restart Windows +++"
+Write-Host "+++ Some Changes May Require Restarting Windows +++"
