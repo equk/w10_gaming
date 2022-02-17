@@ -36,8 +36,6 @@ Created for **Windows 10 21H2**
 
 ## 🧹 Cleanup
 
-- [x] Removes SMB1 Protocol
-- [x] Removes Windows Media Player
 - [x] Removes Microsoft Office Apps
 - [x] Removes Microsoft Skype
 - [x] Removes Sponsored Apps (eg: spotify, facebook, disney+)
